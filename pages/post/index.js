@@ -1,8 +1,1 @@
-import React from "react"
-import fileList from "get-all-blog-posts"
-
-function Post() {
-  return <div>hello</div>
-}
-
-export default Post
+export { default } from "src/client/pages/post/post"
