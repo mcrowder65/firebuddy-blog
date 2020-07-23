@@ -1,6 +1,6 @@
 import React from "react"
 import { ThemeProvider } from "emotion-theming"
-import { theme } from "src/client/theme"
+import { theme } from "src/theme"
 
 function Providers({ children }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
