@@ -1,14 +1,7 @@
-module.exports = {
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: "raw-loader",
-    })
-    // config.module.rules.push({
-    //   test: /\.md$/,
-    //   loader: "frontmatter-markdown-loader",
-    //   options: { mode: ["react-component"] },
-    // })
-    return config
-  },
-}
+// next.config.js
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx|.md?$/,
+})
+module.exports = withMDX({
+  pageExtensions: ["js", "jsx", "mdx", "md"],
+})

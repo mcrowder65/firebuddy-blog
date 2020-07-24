@@ -1,8 +1,10 @@
 import React from "react"
+
 import styled from "@emotion/styled"
 import Link from "next/link"
 import Providers from "src/providers"
 import { useRouter } from "next/router"
+import { H1 } from "src/components/styled"
 import { routeNames } from "src/route-names"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -37,9 +39,6 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-`
-const H = styled.div`
-  font-size: 36px;
 `
 const Content = styled.div`
   margin-top: 42px;
@@ -145,7 +144,7 @@ function App({ Component, pageProps }) {
         <Container>
           <Content>
             <Title open={open}>
-              <H>Firebuddy</H>
+              <H1>Firebuddy</H1>
               <Icon size="lg" icon={faBars} onClick={() => setOpen(!open)} />
               <DesktopLinks>{links}</DesktopLinks>
             </Title>
