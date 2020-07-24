@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 
 export const Page = styled.div`
   width: 100%;
+  height: auto;
   padding: 50px 0 0 0;
 `
 

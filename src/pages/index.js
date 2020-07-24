@@ -28,6 +28,10 @@ function Home() {
           </Link>{" "}
           once every year, and at every major milestone
         </Li>
+        <Li>
+          Share income progression, and tips/tricks for other software
+          developers
+        </Li>
         <Li>Share my experience with the world out in the open</Li>
       </Ol>
       <br />

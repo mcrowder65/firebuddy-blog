@@ -38,7 +38,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
 `
 const Content = styled.div`
   margin-top: 42px;
@@ -74,12 +73,17 @@ const Menu = styled.div`
   visibility: ${(props) => (props.open ? "visible" : "hidden")};
   ${(props) => props.theme.minq("xs")} {
     visibility: hidden;
+    display: none;
   }
 `
 const MobileLinks = styled.div`
   transition: visibility 0ms;
   visibility: ${(props) => (props.open ? "visible" : "hidden")};
   display: flex;
+  ${(props) => props.theme.minq("xs")} {
+    visibility: hidden;
+    display: none;
+  }
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
