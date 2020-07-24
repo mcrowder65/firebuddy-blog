@@ -15,4 +15,11 @@ export const theme = {
       return `@media (max-width: ${size}px)`
     }
   },
+  minq: (size = "xs") => {
+    if (typeof size === "string") {
+      return `@media (min-width: ${theme.sizes[size]}px)`
+    } else {
+      return `@media (min-width: ${size}px)`
+    }
+  },
 }
