@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const Page = styled.div`
   width: 100%;
   height: auto;
-  padding: 50px 0 0 0;
+  padding: 50px 0 50px 0;
 `
 
 export const H1 = styled.div`
